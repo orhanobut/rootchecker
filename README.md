@@ -1,7 +1,7 @@
 #Root Checker
 
 ###Introduction
-Root checker basically checks the binary files which provides the root privileges in specific paths.
+Root checker basically checks your device whether it is rooted or not.
 
 ###Add dependency
 <pre>
