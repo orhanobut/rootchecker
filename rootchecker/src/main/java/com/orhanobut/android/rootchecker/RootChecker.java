@@ -1,5 +1,7 @@
 package com.orhanobut.android.rootchecker;
 
+import android.util.Log;
+
 import java.io.File;
 
 /**
@@ -21,8 +23,14 @@ public final class RootChecker {
 
     static {
         pathList = new String[]{
-                "/sbin/", "/system/bin/", "/system/xbin/", "/data/local/xbin/", "/data/local/bin/",
-                "/system/sd/xbin/", "/system/bin/failsafe/", "/data/local/"
+                "/sbin/",
+                "/system/bin/",
+                "/system/xbin/",
+                "/data/local/xbin/",
+                "/data/local/bin/",
+                "/system/sd/xbin/",
+                "/system/bin/failsafe/",
+                "/data/local/"
         };
     }
 
@@ -32,6 +40,7 @@ public final class RootChecker {
 
     /**
      * Checks the all path until it finds it and return immediately.
+     *
      * @param value must be only the binary name
      * @return if the value is found in any provided path
      */
@@ -41,6 +50,7 @@ public final class RootChecker {
             File file = new File(path + "/" + value);
             result = file.exists();
             if (result) {
+                Log.d(TAG, path + " contains su binary");
                 break;
             }
         }
