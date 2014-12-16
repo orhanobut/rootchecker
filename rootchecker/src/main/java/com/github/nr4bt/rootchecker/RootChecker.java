@@ -1,4 +1,4 @@
-package com.orhanobut.android.rootchecker;
+package com.github.nr4bt.rootchecker;
 
 import android.util.Log;
 

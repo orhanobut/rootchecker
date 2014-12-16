@@ -3,7 +3,7 @@ package com.orhanobut.android.rootcheckerlib;
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.orhanobut.android.rootchecker.RootChecker;
+import com.github.nr4bt.rootchecker.RootChecker;
 
 public class MainActivity extends Activity {
 
